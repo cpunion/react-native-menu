@@ -1,7 +1,9 @@
+const createClass = require('create-react-class');
+
 module.exports = (React, ReactNative, { model }) => {
   const { TouchableWithoutFeedback, View } = ReactNative;
 
-  const MenuTrigger = React.createClass({
+  const MenuTrigger = createClass({
     displayName: 'MenuTrigger',
     propTypes: {
       disabled: React.PropTypes.bool,
